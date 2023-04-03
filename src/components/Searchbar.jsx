@@ -3,19 +3,18 @@ import { Component } from 'react';
 export class Searchbar extends Component {
   render() {
     return (
-      <header class="searchbar">
-        <form class="form">
-          <button type="submit" class="button">
-            <span class="button-label">Search</span>
-          </button>
-
+      <header class="search-bar">
+        <form class="search-form">
           <input
-            class="input"
+            class="search-form__input"
             type="text"
             autocomplete="off"
             autofocus
             placeholder="Search images and photos"
           />
+          <button type="submit" class="search-form__button">
+            <span class="search-form__button-label">Search</span>
+          </button>
         </form>
       </header>
     );
