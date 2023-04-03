@@ -19,7 +19,6 @@ export class App extends Component {
     try {
       const images = await api.fetchImagesWithQuery(query);
       this.setState({ images });
-      console.log(images);
     } catch (error) {
       this.setState({ error });
       console.log(error);
