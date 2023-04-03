@@ -12,4 +12,8 @@ export const fetchImagesWithQuery = async searchQuery => {
   return response.data.hits;
 };
 
-export default fetchImagesWithQuery();
+const api = {
+  fetchImagesWithQuery,
+};
+
+export default api;
