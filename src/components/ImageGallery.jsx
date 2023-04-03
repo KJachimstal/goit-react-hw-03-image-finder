@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import { ImageGalleryItem } from './ImageGalleryItem';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 
 export class ImageGallery extends Component {
   render() {
