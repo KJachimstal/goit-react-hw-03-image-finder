@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { PropTypes } from 'prop-types';
 
 export class Searchbar extends Component {
   render() {
@@ -20,3 +21,7 @@ export class Searchbar extends Component {
     );
   }
 }
+
+Searchbar.propTypes = {
+  handleSearch: PropTypes.func.isRequired,
+};

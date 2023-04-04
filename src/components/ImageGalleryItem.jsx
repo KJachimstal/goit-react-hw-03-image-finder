@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { PropTypes } from 'prop-types';
 export class ImageGalleryItem extends Component {
   render() {
     const { src, alt, id, onClick } = this.props;
@@ -15,3 +16,7 @@ export class ImageGalleryItem extends Component {
     );
   }
 }
+
+ImageGalleryItem.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
