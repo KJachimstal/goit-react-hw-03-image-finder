@@ -3,6 +3,7 @@ import { ImageGalleryItem } from './ImageGalleryItem';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import * as React from 'react';
+import { nanoid } from 'nanoid';
 
 export class ImageGallery extends Component {
   state = {
@@ -32,7 +33,7 @@ export class ImageGallery extends Component {
               src={image.previewURL}
               alt={image.tags}
               id={image.id}
-              key={image.id}
+              key={nanoid()}
               originalSrc={image.largeImageURL}
               onClick={this.onClick}
             />
