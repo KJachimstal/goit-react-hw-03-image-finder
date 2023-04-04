@@ -4,7 +4,7 @@ export class Searchbar extends Component {
   render() {
     return (
       <header className="search-bar">
-        <form className="search-form" onSubmit={this.props.handleSubmit}>
+        <form className="search-form" onSubmit={this.props.handleSearch}>
           <input
             className="search-form__input"
             type="text"
