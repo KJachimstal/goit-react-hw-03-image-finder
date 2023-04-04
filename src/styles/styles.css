@@ -127,3 +127,11 @@ img {
 .search-form__button:focus {
   background-color: #0b23bd;
 }
+
+.load-more {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 16px 64px;
+}
